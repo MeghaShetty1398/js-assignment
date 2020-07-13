@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Assignment 1- Question 3</title>
+        <script>
+            function displayDate()
+            {
+                //For current date
+                var date=new Date();
+                var dd=date.getDate();
+                var mm=date.getMonth()+1;
+                var yyyy=date.getFullYear();
+                document.getElementById('display-date').innerHTML=mm+"-"+dd+"-"+yyyy+" , "+mm+"/"+dd+"/"+yyyy;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="display-date"></h1>
+        <button onclick="displayDate()">Display Current Date</button>
+    </body>
+</html>
