@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1-Question 2</title>
+</head>
+<body>
+    <script>
+    //1. var declarations are globally scoped or function scoped while let and const are block scoped.
+    //2. var variables can be updaed and redeclared within its scope while 
+        //let variables can be updated but not redeclared
+        //const variable can neither be updated nor redeclared.
+    //3. var and let can be declared without being initailized, while const must be initialized during declarations.
 
+    //Examples
+        {
+            var greeter="Hello everyone!!!";
+            let hello="hello";
+            console.log(hello);
+            const myconst="Hii! I am const";
+            console.log(myconst);
+
+             //reclaration
+            var greeter="Hello";
+            console.log(greeter);
+            //let hello="Hii";------->//ERROR
+            //const myconst="Hii";------->//ERROR
+            //myconst="Hii";------->//ERROR
+        }
+        //console.log(hello);------->//ERROR
+        console.log(greeter);
+
+    </script>
+</body>
+</html>
